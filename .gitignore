@@ -1,0 +1,9 @@
+# Veritabanı dosyaları
+*.db
+*.sqlite3
+
+# Python önbellek dosyaları
+__pycache__/
+
+# Çevresel değişkenler
+.env

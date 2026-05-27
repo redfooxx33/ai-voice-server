@@ -1,0 +1,15 @@
+from fastapi import FastAPI
+
+# Sunucumuzu başlatıyoruz
+app = FastAPI()
+
+# Vapi'nin geleceği kapıyı (Endpoint) hazırlıyoruz
+@app.post("/api/v1/voice-tools")
+async def handle_vapi_request():
+    print("Vapi'den istek geldi! Kapıyı açtık.")
+    
+    # Vapi'ye göndereceğimiz cevap (Michael'ın istediği formatta)
+    return {
+        "status": "ok",
+        "userSafeSummary": "We service Tampa. A $75 travel surcharge applies for this area."
+    }
